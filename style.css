@@ -297,3 +297,49 @@ main {
     }
   }
 }
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+
+  header nav img {
+    height: 30px;
+    width: 30px;
+  }
+
+  header nav ul li {
+    margin: 0px 10px;
+  }
+
+  header nav .search {
+    display: none;
+  }
+
+  .slider {
+    flex-direction: row; /* Stack items vertically for small screens */
+  }
+
+  .item {
+    width: 40%;
+    height: 200px;
+    left: 50%;
+    transform: none;
+    border-radius: 10px; /* Add border-radius for a smoother look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s, box-shadow 0.75s; /* Add box-shadow transition */
+
+    &:nth-child(2) .content {
+      display: block;
+      animation: show 0.75s ease-in-out 0.3s forwards;
+    }
+  }
+  .content {
+    width: 80%;
+    left: 10%;
+  }
+
+  .nav {
+    bottom: 1rem;
+  }
+}
